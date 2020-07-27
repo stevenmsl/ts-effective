@@ -78,10 +78,10 @@ const ps4: PersonOrLifespan = {
 const ps6: PersonSpan = ps3 as PersonSpan;
 
 /* 
-  - TS cannot guarantee what the keys would look like in union types
-    hence it would just return you the type never, there are no 
-    common properties among types used to create the union type  
-    which represents an empty set, 
+  - TS cannot guarantee what the keys would look like in this union 
+    types hence it would just return you the type never as there
+    are no common properties among types used to create the union
+    type. The never type represents an empty set. 
   - in the case of PersonOrLifespan, you can have just one property: 
     name, or two properties name and birth, or again just one 
     property birth. They are all legit cases for PersonOrLifespan
