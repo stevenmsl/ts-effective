@@ -79,7 +79,7 @@ const ps6: PersonSpan = ps3 as PersonSpan;
 
 /* 
   - TS cannot guarantee what the keys would look like in union types
-    hence it would just return you the type never, ff there are no 
+    hence it would just return you the type never, there are no 
     common properties among types used to create the union type  
     which represents an empty set, 
   - in the case of PersonOrLifespan, you can have just one property: 
