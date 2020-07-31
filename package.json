@@ -1,11 +1,19 @@
 {
   "name": "ts-effective",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenmsl/ts-effective.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevenmsl/ts-effective/issues"
+  },
+  "homepage": "https://github.com/stevenmsl/ts-effective#readme",
+  "description": ""
 }

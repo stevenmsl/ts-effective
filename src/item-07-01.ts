@@ -2,7 +2,7 @@
     Item 7 - Think of Types as Sets of Values
 */
 
-interface Person {
+interface Person_I7 {
   name: string;
 }
 interface Lifespan {
@@ -18,7 +18,7 @@ interface Lifespan {
     properties to satisfy the requirement of both 
     Person and Lifespan at the same time. 
 */
-type PersonSpan = Person & Lifespan; // Intersection
+type PersonSpan = Person_I7 & Lifespan; // Intersection
 type PersonSpanKeys = keyof PersonSpan; // "name"|"birth"|"death"
 
 /*
@@ -29,7 +29,7 @@ type PersonSpanKeys = keyof PersonSpan; // "name"|"birth"|"death"
   - think of literal types union as a normal set union operation 
     which combines two sets of values into one, bigger set.    
 */
-type PersonSpanKeys2 = keyof Person | keyof Lifespan; // "name"|"birth"|"death"
+type PersonSpanKeys2 = keyof Person_I7 | keyof Lifespan; // "name"|"birth"|"death"
 
 const ps: PersonSpan = {
   name: "",
@@ -40,7 +40,7 @@ const ps: PersonSpan = {
 /*
 
 */
-type PersonOrLifespan = Person | Lifespan;
+type PersonOrLifespan = Person_I7 | Lifespan;
 
 //  ps2 is of type Person
 const ps2: PersonOrLifespan = {
