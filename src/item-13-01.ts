@@ -3,6 +3,12 @@
 */
 
 /*
+  additional resources: 
+  - https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#types-or-interfaces
+
+*/
+
+/*
     - the cases where interface and type are indistinguishable
 */
 
