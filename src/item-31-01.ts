@@ -61,7 +61,7 @@ function extent(nums: number[]) {
   /* 
     - if you pass in an empty array both min and
       max will be undefined so the return type
-      is (number | undefined)
+      is (number | undefined)[]
     - this also makes you function difficult to use
   */
   return [min, max];
