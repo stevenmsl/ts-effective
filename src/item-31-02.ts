@@ -66,8 +66,6 @@ class UserPosts2 {
     this.posts = posts;
   }
 
-  // this makes it very difficult for the
-  // client to use this class.
   static async init(userId: string): Promise<UserPosts2> {
     const [user, posts] = await Promise.all([
       fetchUser(userId),
