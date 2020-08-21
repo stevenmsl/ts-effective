@@ -27,9 +27,7 @@ interface Bar2 {
   bar: string;
 }
 declare function expressionReturningFoo2(): Foo2;
-function processBar(b: Bar2) {
-  /* ... */
-}
+
 interface Config {
   a: number;
   b: number;
